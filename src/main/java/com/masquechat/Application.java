@@ -1,4 +1,4 @@
-package com.tysa.masquechat;
+package com.masquechat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
