@@ -1,4 +1,4 @@
-package com.tysa.masquechat.chat.controller;
+package com.masquechat.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,7 +1,7 @@
-package com.tysa.masquechat.chat.service.impl;
+package com.masquechat.service.impl;
 
-import com.tysa.masquechat.chat.repo.MessageRepository;
-import com.tysa.masquechat.chat.service.MessageService;
+import com.masquechat.repo.MessageRepository;
+import com.masquechat.service.MessageService;
 
 public class MessageServiceImpl implements MessageService {
     private final MessageRepository messageRepository;

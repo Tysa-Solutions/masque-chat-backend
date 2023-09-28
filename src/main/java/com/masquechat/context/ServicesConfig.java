@@ -1,8 +1,8 @@
-package com.tysa.masquechat.context;
+package com.masquechat.context;
 
-import com.tysa.masquechat.chat.repo.MessageRepository;
-import com.tysa.masquechat.chat.service.MessageService;
-import com.tysa.masquechat.chat.service.impl.MessageServiceImpl;
+import com.masquechat.repo.MessageRepository;
+import com.masquechat.service.MessageService;
+import com.masquechat.service.impl.MessageServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
