@@ -4,22 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.4</version>
+		<groupId>com.mc</groupId>
+		<artifactId>masque-chat</artifactId>
+		<version>development-SNAPSHOT</version>
 	</parent>
 
-	<groupId>com.mc</groupId>
-	<artifactId>masque-chat</artifactId>
-	<version>development-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>masque-chat</name>
-	<description>A simple Springboot + Angular kiss architecture.</description>
-
-	<modules>
-		<module>frontend</module>
-		<module>backend</module>
-	</modules>
+	<name>masque-chat-backend</name>
+	<description>Masque Chat Backend</description>
+	<artifactId>backend</artifactId>
 
 	<properties>
 		<java.version>21</java.version>
@@ -30,9 +22,32 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
